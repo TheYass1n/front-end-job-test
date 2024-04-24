@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+
+/* login image */
+
+.login-image {
+    background-image: url(../assets/login_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.login-image .inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-image .box {
+    width: 400px;
+    height: 500px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.login-image .box img {
+    width: 400px;
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    }
+
+.login-image .box h1 {
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 700;
+    max-width: 200px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* login form */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 15px;
+    background: #F0EDFF;
+    position: relative;
+    border-radius: 25px;
+}
+
+
+.input-group svg {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    position: absolute;
+    inset: 10px;
+}
+
+
+
+.input-group input {
+    padding: 12px;
+    padding-inline-start: 36px;
+    border:none;
+    background: #F0EDFF;
+    border-radius: 10px;
+}
+
+.input-group input:hover,
+.input-group input:focus-visible {
+    outline:2px solid #5f48ef;
+}
+
+.submit-btn {
+    padding:10px 20px;
+    border:none;
+    margin: auto;
+    color:#fff;
+    font-weight: 700;
+    border-radius: 12px;
+    background: rgb(145,129,244);
+    background: linear-gradient(93deg, #9181F4 0%, #5038ED 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-login-sapretor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.social-login-sapretor hr {
+    width: 100px;
+    height: 1px;
+    background: #ccc;
+    border: none;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-login button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-login button img {
+    width: 20px;
+    margin-right: 10px;
+}
